@@ -211,3 +211,4 @@ Escanea el código QR o entra directamente al enlace para consultar tus notas:
 🔗 [Consultar notas](https://script.google.com/macros/s/AKfycbws2_O9VlGq6_hwd5f01ZNrIDkbQVNcQrbs0wgA0kQhBign0fXPBoqzowuIDOTOPAfs6g/exec)
 
 `https://script.google.com/macros/s/AKfycbws2_O9VlGq6_hwd5f01ZNrIDkbQVNcQrbs0wgA0kQhBign0fXPBoqzowuIDOTOPAfs6g/exec`
+

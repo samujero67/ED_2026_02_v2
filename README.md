@@ -81,6 +81,8 @@ Esto importa porque los scripts de calificación buscan tu trabajo por nombre de
 notebook (por ejemplo a `lab_final_v2.ipynb`), el corrector no lo va a encontrar y tu entrega puede quedar
 sin calificar aunque el contenido esté perfecto.
 
+CARPETAS_ADICIONALES_PERMITIDAS = {"Proyecto1", "Proyecto2", "Parciales"}
+
 <p align="center">
   <img src="notebooks/assets/estructura_student_work.png" alt="Estructura esperada de student_work/, organizada por capítulos como goodrich/" width="620">
 </p>

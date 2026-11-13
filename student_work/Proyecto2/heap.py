@@ -1,18 +1,3 @@
-"""
-Proyecto 2 - Heap con imágenes.
-
-Min heap guardado en un arreglo (lista de Python) con las mismas
-convenciones de la página de referencia:
-    https://www.cs.usfca.edu/~galles/visualization/Heap.html
-
-- self.arreglo[0] es -INF y no hace parte del heap.
-- La raíz está en self.arreglo[1].
-- Los hijos de la posición i están en 2*i y 2*i + 1; su padre en i // 2.
-
-Invariante (propiedad de min heap): para toda posición i >= 2,
-    self.arreglo[i // 2] <= self.arreglo[i]
-"""
-
 import math
 import matplotlib.pyplot as plt
 
@@ -21,6 +6,7 @@ class Heap:
 
     def __init__(self):
         self.arreglo = [float('-inf')]
+        self.ultima_imagen = None    # última figura mostrada (para guardarla en PNG)
 
     # ------------------------------------------------------------------
     # Operaciones de la página
@@ -159,8 +145,9 @@ class Heap:
 
     def _mostrar_imagen(self):
         fig = self._dibujar()
+        self.ultima_imagen = fig    # se guarda para poder hacer savefig después
         plt.show()
-        plt.close(fig)      # libera la memoria de la figura
+        plt.close(fig)      # la quita de pyplot; el objeto sigue sirviendo para savefig
 
     def __repr__(self):
         return "Heap(" + str(self.arreglo) + ")"
